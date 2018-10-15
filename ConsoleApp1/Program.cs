@@ -21,13 +21,17 @@ namespace ConsoleApp1
 
 
             Console.WriteLine("Welcome to Gand Circus' Room Detail Generator");
-
+            // James - I really like that you are making use of a do while loop! really cool, this is a 
+            // great use case of do while, because after all, we want the program to run at least 
+            // once.
             do
             {
                 // prompt user
                 Console.WriteLine("Enter length of room :");
                 double lengthOfRoom = double.Parse(Console.ReadLine());
 
+                // James - I really liked how you kept your code organized here, like a 
+                // seperate block for each area we are asking the user for, good stuff
                 Console.WriteLine("Enter width of room :");
                 double widthOfRoom = double.Parse(Console.ReadLine());
 
@@ -50,6 +54,9 @@ namespace ConsoleApp1
                     shouldContinue = false;
                 }
             }
+            // James - I see you are running a while true, however, this program
+            // is going to run forever until you break, make sure you are using your "should continue" variable 
+            // in this while loop.
             while (true);
             
 
